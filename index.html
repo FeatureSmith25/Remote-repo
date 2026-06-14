@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Data Scientist | Portfolio</title>
+    <!-- Premium Fonts and Icons -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Custom Point Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Global Animated Background -->
+    <canvas id="hero-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="logo">Data<span class="highlight">Sci</span>.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <!-- <li><a href="#reviews">Reviews</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <p id="dynamic-greeting" class="greeting"></p>
+            <p class="subtitle">Welcome to my universe of data</p>
+            <h1>Turning Data into <br><span class="gradient-text">Actionable Insights</span></h1>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Let's Talk</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll Down</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Profile & Biography Section -->
+        <section id="profile" class="profile-section hidden-element">
+            <div class="section-container border-glow profile-container" style="display: flex; align-items: center; gap: 4rem; flex-wrap: wrap; justify-content: center; padding: 4rem 2rem; margin-bottom: 4rem;">
+                <div class="profile-image-wrapper" style="flex-shrink: 0; text-align: center;">
+                    <!-- A realistic placeholder professional image -->
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Professional Headshot" style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover; border: 4px solid #3b82f6; box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);">
+                </div>
+                <div class="profile-details" style="flex: 1; min-width: 300px;">
+                    <h2 class="section-title">My <span class="highlight">Biography</span></h2>
+                    <p style="margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.8; color: var(--text-color, #e2e8f0);">
+                        Hello! I am a Data Scientist leveraging machine learning and advanced analytics to solve complex challenges. I focus on bridging the gap between raw data and actionable strategic insights.
+                    </p>
+                    <p style="margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.8; color: var(--text-color, #e2e8f0);">
+                        When I'm not diving into neural networks or optimizing pipelines, you can find me presenting data stories and contributing to open-source projects. I'm always looking for innovative ways to drive business growth through data.
+                    </p>
+                    <div style="font-size: 1.5rem; display: flex; gap: 1.5rem;">
+                        <a href="https://linkedin.com" target="_blank" style="color: inherit; transition: color 0.3s;" onmouseover="this.style.color='#3b82f6'" onmouseout="this.style.color='inherit'"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com" target="_blank" style="color: inherit; transition: color 0.3s;" onmouseover="this.style.color='#3b82f6'" onmouseout="this.style.color='inherit'"><i class="fab fa-github"></i></a>
+                        <a href="mailto:email@example.com" style="color: inherit; transition: color 0.3s;" onmouseover="this.style.color='#3b82f6'" onmouseout="this.style.color='inherit'"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section hidden-element">
+            <div class="section-container border-glow">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I am a passionate Data Scientist with a proven track record of solving complex business problems using advanced analytics and machine learning. My approach combines rigorous statistical methodology with scalable software engineering to deploy models that drive real-world impact.</p>
+                        <p>With expertise across the entire data lifecycle—from extraction and cleaning to algorithmic design and visualization—I build tools that empower organizations to make data-driven decisions.</p>
+                    </div>
+                    <div class="skills-container">
+                        <h3>Core Competencies</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Python & R</span>
+                            <span class="skill-tag">SQL & NoSQL</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Deep Learning (TensorFlow/PyTorch)</span>
+                            <span class="skill-tag">Data Visualization (Tableau/PowerBI)</span>
+                            <span class="skill-tag">NLP & Computer Vision</span>
+                            <span class="skill-tag">AWS / GCP / Azure</span>
+                            <span class="skill-tag">Big Data (Spark/Hadoop)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <h2 class="section-title">Professional <span class="highlight">Experience</span></h2>
+            <div class="timeline">
+                <div class="timeline-item hidden-element">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Data Scientist</h3>
+                        <span class="timeline-company">Tech Analytics Inc.</span>
+                        <span class="timeline-date">2021 - Present</span>
+                        <p>Led a team of data scientists to build predictive models that increased customer retention by 22%. Architected scalable ML pipelines on AWS and implemented advanced NLP models for sentiment analysis on customer feedback.</p>
+                    </div>
+                </div>
+                <div class="timeline-item hidden-element">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Data Scientist</h3>
+                        <span class="timeline-company">DataDriven Solutions</span>
+                        <span class="timeline-date">2018 - 2021</span>
+                        <p>Developed pricing optimization algorithms that generated a 15% increase in revenue. Conducted A/B testing and exploratory data analysis to inform product strategies. Built interactive dashboards for executive stakeholders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">Selected <span class="highlight">Projects</span></h2>
+            <div class="projects-grid">
+                
+                <div class="project-card hidden-element">
+                    <div class="project-img-container">
+                        <div class="svg-placeholder blue-gradient">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Deep Learning Fraud Detection</h3>
+                        <p>An end-to-end fraud detection system utilizing an autoencoder neural network. Achieved 99.8% accuracy on imbalanced transactional data.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>Pandas</span>
+                            <span>React</span>
+                        </div>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card hidden-element">
+                    <div class="project-img-container">
+                        <div class="svg-placeholder purple-gradient">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>NLP Customer Support Bot</h3>
+                        <p>A sophisticated chatbot leveraging transformer models (BERT) to understand context and route support tickets, reducing response time by 60%.</p>
+                        <div class="project-tech">
+                            <span>HuggingFace</span>
+                            <span>FastAPI</span>
+                            <span>Docker</span>
+                        </div>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card hidden-element">
+                    <div class="project-img-container">
+                        <div class="svg-placeholder cyan-gradient">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Global Sales Interactive Dashboard</h3>
+                        <p>A robust interactive dashboard providing real-time analytics. Ingests millions of records daily via a custom ETL pipeline and visualizes key metrics.</p>
+                        <div class="project-tech">
+                            <span>Tableau</span>
+                            <span>Snowflake</span>
+                            <span>Airflow</span>
+                        </div>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="reviews-section hidden-element">
+            <div class="section-container border-glow">
+                <h2 class="section-title">Client <span class="highlight">Reviews</span></h2>
+                
+                <div class="reviews-container">
+                    <div id="reviews-list" class="reviews-list">
+                        <!-- Reviews inserted here by JS -->
+                        <p class="loading-text" style="text-align: center; color: var(--text-secondary);">Loading reviews from database...</p>
+                    </div>
+                </div>
+
+                <!-- Leave a review form is hidden. Only database insertions allowed. -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section hidden-element">
+            <div class="contact-container">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <p class="contact-desc">Interested in discussing a project or a potential collaboration? Send me a message, and I'll get back to you shortly.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Data<span class="highlight">Sci</span>.</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-kaggle"></i></a>
+            </div>
+            <p>&copy; <span id="year"></span> DataSci Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
